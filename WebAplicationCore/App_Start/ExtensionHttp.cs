@@ -4,110 +4,104 @@ using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace WebAplicationCore
+namespace WebApp
 {
     public static class ExtensionHttp
     {
 
-        //public static async Task<T> AxiosGetAsync<T>(this HttpClient axios, string url)
-        //{
-        //    using (var result = axios.GetFromJsonAsync<T>(url))
-        //    {
 
+        //public static async Task<T> ServicioGetAsync<T>(this HttpClient client, string url)
+        //{
+        //    using (var result = client.GetFromJsonAsync<T>(url))
+        //    {
         //        return await result;
         //    }
+
         //}
 
-        //public async static Task<T> AxiosDeleteAsync<T>(this HttpClient httpClient, string Url)
+
+
+        //public static async Task<T> ServicioDeleteAsync<T>(this HttpClient client, string url)
         //{
-        //    using (var result = await httpClient.DeleteAsync(Url))
+        //    using (var result = await client.DeleteAsync(url))
         //    {
         //        if (!result.IsSuccessStatusCode) throw new Exception(result.ReasonPhrase);
-
-        //        if (result.StatusCode == System.Net.HttpStatusCode.NoContent) return default;
 
         //        return await result.Content.ReadFromJsonAsync<T>();
         //    }
-        //}
 
-        //public static async Task<TResult> AxiosPostAsync<TSend, TResult>(this HttpClient axios, string url, TSend send)
-        //{
-        //    using (var result = await axios.PostAsJsonAsync(url, send))
-        //    {
-        //        if (!result.IsSuccessStatusCode) throw new Exception(result.ReasonPhrase);
-        //        if (result.StatusCode == System.Net.HttpStatusCode.NoContent) return default;
-        //        return await result.Content.ReadFromJsonAsync<TResult>();
-        //    }
-        //}
-        //public static async Task<TResult> AxiosPostAsync<TResult>(this HttpClient axios, string url)
-        //{
-
-        //    using (var result = await axios.PostAsJsonAsync(url, ""))
-        //    {
-
-        //        var test = new JsonSerializerOptions { };
-        //        if (!result.IsSuccessStatusCode) throw new Exception(result.ReasonPhrase);
-
-        //        if (result.StatusCode == System.Net.HttpStatusCode.NoContent) return default;
-
-        //        return await result.Content.ReadFromJsonAsync<TResult>();
-        //    }
         //}
 
 
-        //public static async Task<TResult> AxiosPostAsync<TResult>(this HttpClient axios, string url, TResult send)
+        //public static async Task<T> ServicioPostAsync<T>(this HttpClient client, string url)
         //{
-
-        //    using (var result = await axios.PostAsJsonAsync(url, send))
-        //    {
-        //        if (!result.IsSuccessStatusCode) throw new Exception(result.ReasonPhrase);
-        //        if (result.StatusCode == System.Net.HttpStatusCode.NoContent) return default;
-        //        return await result.Content.ReadFromJsonAsync<TResult>();
-        //    }
-        //}
-
-        //public static async Task<string> AxiosPostAsStringAsync<TResult>(this HttpClient axios, string url, TResult send)
-        //{
-
-        //    using (var result = await axios.PostAsJsonAsync(url, send))
+        //    using (var result = await client.PostAsJsonAsync(url, ""))
         //    {
         //        if (!result.IsSuccessStatusCode) throw new Exception(result.ReasonPhrase);
 
-        //        return await result.Content.ReadAsStringAsync();
+        //        return await result.Content.ReadFromJsonAsync<T>();
         //    }
+
         //}
 
-        //public static async Task<string> AxiosPostAsStringAsync(this HttpClient axios, string url)
-        //{
 
-        //    using (var result = await axios.PostAsJsonAsync(url, ""))
+        //public static async Task<TResul> ServicioPostAsync<TSend, TResul>(this HttpClient client, string url, TSend val)
+        //{
+        //    using (var result = await client.PostAsJsonAsync(url, val))
         //    {
         //        if (!result.IsSuccessStatusCode) throw new Exception(result.ReasonPhrase);
 
-        //        return await result.Content.ReadAsStringAsync();
+        //        return await result.Content.ReadFromJsonAsync<TResul>();
         //    }
+
         //}
 
-        //public static async Task<TResult> AxiosPutAsync<TResult, TSend>(this HttpClient axios, string url, TSend send)
+        //public static async Task<TResul> ServicioPostAsync<TResul>(this HttpClient client, string url, TResul val)
         //{
-        //    using (var result = await axios.PutAsJsonAsync(url, send))
+        //    using (var result = await client.PostAsJsonAsync(url, val))
         //    {
         //        if (!result.IsSuccessStatusCode) throw new Exception(result.ReasonPhrase);
-        //        if (result.StatusCode == System.Net.HttpStatusCode.NoContent) return default;
-        //        return await result.Content.ReadFromJsonAsync<TResult>();
+
+        //        return await result.Content.ReadFromJsonAsync<TResul>();
         //    }
+
         //}
 
-        //public static async Task<TResult> AxiosPutAsync<TResult>(this HttpClient axios, string url)
+        //public static async Task<T> ServicioPutAsync<T>(this HttpClient client, string url)
         //{
-
-        //    using (var result = await axios.PutAsJsonAsync(url, ""))
+        //    using (var result = await client.PutAsJsonAsync(url, ""))
         //    {
         //        if (!result.IsSuccessStatusCode) throw new Exception(result.ReasonPhrase);
-        //        if (result.StatusCode == System.Net.HttpStatusCode.NoContent) return default;
-        //        return await result.Content.ReadFromJsonAsync<TResult>();
+
+        //        return await result.Content.ReadFromJsonAsync<T>();
         //    }
+
         //}
+
+
+        //public static async Task<TResul> ServicioPutAsync<TSend, TResul>(this HttpClient client, string url, TSend val)
+        //{
+        //    using (var result = await client.PutAsJsonAsync(url, val))
+        //    {
+        //        if (!result.IsSuccessStatusCode) throw new Exception(result.ReasonPhrase);
+
+        //        return await result.Content.ReadFromJsonAsync<TResul>();
+        //    }
+
+        //}
+
+        //public static async Task<TResul> ServicioPutAsync<TResul>(this HttpClient client, string url, TResul val)
+        //{
+        //    using (var result = await client.PutAsJsonAsync(url, val))
+        //    {
+        //        if (!result.IsSuccessStatusCode) throw new Exception(result.ReasonPhrase);
+
+        //        return await result.Content.ReadFromJsonAsync<TResul>();
+        //    }
+
+        //}
+
+
 
 
     }

@@ -15,6 +15,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\Assets\%40types\SweetAlert\Sweetalert.js" />
+    <None Include="wwwroot\Assets\%40types\SweetAlert\Sweetalert.js.map" />
+    <None Include="wwwroot\Assets\Plugin\sweetalert\SwalConfig.js" />
+    <None Include="wwwroot\Assets\Plugin\sweetalert\SwalConfig.js.map" />
+    <None Include="wwwroot\Assets\Plugin\sweetalert\sweetalert2%4011.js" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="5.0.6" />
   </ItemGroup>
 
@@ -30,6 +38,9 @@
     <TypeScriptCompile Include="wwwroot\App\Puestos\Grid.ts" />
     <TypeScriptCompile Include="wwwroot\App\Titulos\Edit.ts" />
     <TypeScriptCompile Include="wwwroot\App\Titulos\Grid.ts" />
+    <TypeScriptCompile Include="wwwroot\Assets\%40types\SweetAlert\index.d.ts" />
+    <TypeScriptCompile Include="wwwroot\Assets\%40types\SweetAlert\Sweetalert.ts" />
+    <TypeScriptCompile Include="wwwroot\Assets\Plugin\sweetalert\SwalConfig.ts" />
   </ItemGroup>
 
 </Project>
