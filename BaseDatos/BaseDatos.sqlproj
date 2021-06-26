@@ -64,5 +64,17 @@
     <Build Include="dbo\Tables\Titulos.sql" />
     <Build Include="dbo\Tables\Puestos.sql" />
     <Build Include="dbo\Tables\Departamentos.sql" />
+    <Build Include="dbo\StoreProcedure\DepartamentosActualizar.sql" />
+    <Build Include="dbo\StoreProcedure\DepartamentosEliminar.sql" />
+    <Build Include="dbo\StoreProcedure\DepartamentosInsertar.sql" />
+    <Build Include="dbo\StoreProcedure\DepartamentosObtener.sql" />
+    <Build Include="dbo\StoreProcedure\PuestosActualizar.sql" />
+    <Build Include="dbo\StoreProcedure\PuestosEliminar.sql" />
+    <Build Include="dbo\StoreProcedure\PuestosInsertar.sql" />
+    <Build Include="dbo\StoreProcedure\PuestosObtener.sql" />
+    <Build Include="dbo\StoreProcedure\TitulosActualizar.sql" />
+    <Build Include="dbo\StoreProcedure\TitulosEliminar.sql" />
+    <Build Include="dbo\StoreProcedure\TitulosInsertar.sql" />
+    <Build Include="dbo\StoreProcedure\TitulosObtener.sql" />
   </ItemGroup>
 </Project>

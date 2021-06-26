@@ -6,16 +6,30 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="5.0.6" />
+    <Content Remove="wwwroot\App\Departamentos\Edit.ts" />
+    <Content Remove="wwwroot\App\Departamentos\Grid.ts" />
+    <Content Remove="wwwroot\App\Puestos\Edit.ts" />
+    <Content Remove="wwwroot\App\Puestos\Grid.ts" />
+    <Content Remove="wwwroot\App\Titulos\Edit.ts" />
+    <Content Remove="wwwroot\App\Titulos\Grid.ts" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\App\" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="5.0.6" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Entity\Entity.csproj" />
     <ProjectReference Include="..\WBL\WBL.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="wwwroot\App\Departamentos\Edit.ts" />
+    <TypeScriptCompile Include="wwwroot\App\Departamentos\Grid.ts" />
+    <TypeScriptCompile Include="wwwroot\App\Puestos\Edit.ts" />
+    <TypeScriptCompile Include="wwwroot\App\Puestos\Grid.ts" />
+    <TypeScriptCompile Include="wwwroot\App\Titulos\Edit.ts" />
+    <TypeScriptCompile Include="wwwroot\App\Titulos\Grid.ts" />
   </ItemGroup>
 
 </Project>
