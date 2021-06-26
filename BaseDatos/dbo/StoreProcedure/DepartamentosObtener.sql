@@ -1,6 +1,16 @@
 ﻿CREATE PROCEDURE [dbo].[DepartamentosObtener]
-	@param1 int = 0,
-	@param2 int
+	@Id_Departamento INT = NULL
+
 AS
-	SELECT @param1, @param2
-RETURN 0
+	BEGIN 
+	SET NOCOUNT ON
+
+	SELECT 
+	    Id_Departamento
+	  , Descripcion
+	  , Ubicacion
+	  , Estado
+	FROM Departamentos
+	WHERE (@Id_Departamento IS NULL OR Id_Departamento=@Id_Departamento)
+
+	END
