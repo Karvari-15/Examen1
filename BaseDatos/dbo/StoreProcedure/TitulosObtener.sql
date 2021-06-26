@@ -5,7 +5,7 @@ AS
 	SET NOCOUNT ON
 
 	SELECT 
-	    @Id_Titulo
+	    Id_Titulo
 	  , Descripcion
 	  , Estado
 	FROM Titulos

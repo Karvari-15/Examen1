@@ -5,7 +5,7 @@ AS
 	SET NOCOUNT ON
 
 	SELECT 
-	    @Id_Puesto
+	    Id_Puesto
 	  , Nombre
 	  , Salario
 	  , Estado
